@@ -37,7 +37,8 @@ struct AddView: View {
             }
             .padding(14)
         }
-        .navigationTitle("Добавить задачу 🖊")
+//        .navigationTitle("Добавить задачу 🖊")
+        .navigationBarHidden(true)
         .alert(isPresented: $showAlert, content: getAlert)
     }
     
